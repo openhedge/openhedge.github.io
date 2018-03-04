@@ -1,0 +1,25 @@
+{
+  "name": "openhedge.github.io",
+  "version": "0.1.0",
+  "description": "The site repository of OpenHedge",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/main.scss css/master.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/openhedge/openhedge.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/openhedge/openhedge.github.io/issues"
+  },
+  "homepage": "https://github.com/openhedge/openhedge.github.io#readme",
+  "devDependencies": {
+    "node-sass": "^4.7.2",
+    "nodemon": "^1.17.1"
+  }
+}

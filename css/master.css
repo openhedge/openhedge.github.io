@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css?family=Karma|PT+Sans");
+html, body {
+  height: 100%; }
+
+.container {
+  width: 100%;
+  height: 300%;
+  /* n. of pages * 100% */
+  background-color: grey;
+  display: flex;
+  flex-direction: column; }
+
+.page {
+  box-sizing: border-box;
+  flex: 1; }
+
+.first-page {
+  border: 5px solid yellow; }
+
+.second-page {
+  border: 5px solid red; }
+
+.third-page {
+  border: 5px solid blue;
+  display: flex;
+  flex-direction: column; }
+  .third-page section {
+    background-color: lightyellow;
+    flex: 1; }
+  .third-page footer {
+    color: white;
+    background-color: #15201f;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    font-family: "PT Sans", sans-serif;
+    line-height: 20px; }
+    .third-page footer .row {
+      box-sizing: border-box;
+      padding: 10px;
+      flex: 1;
+      justify-content: center; }
+    .third-page footer .first-row {
+      flex: 3;
+      display: flex;
+      flex-direction: row;
+      font-size: 14px; }
+      .third-page footer .first-row .column {
+        box-sizing: border-box;
+        padding: 20px 30px; }
+        .third-page footer .first-row .column h1 {
+          font-family: "Karma", serif;
+          font-size: 30px;
+          margin-top: 20px; }
+        .third-page footer .first-row .column li:first-child {
+          color: lightgrey;
+          font-size: 18px;
+          font-weight: bold;
+          margin-bottom: 10px; }
+    .third-page footer .second-row {
+      display: flex;
+      flex-direction: row; }
+      .third-page footer .second-row .column {
+        box-sizing: border-box;
+        padding: 10px; }

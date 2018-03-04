@@ -1,0 +1,23 @@
+@import "palette.scss";
+@import "fonts.scss";
+
+html, body {
+  height: 100%;
+}
+
+.container {
+  width: 100%;
+  height: 300%; /* n. of pages * 100% */
+  background-color: grey;
+  display: flex;
+  flex-direction: column;
+}
+
+.page {
+  box-sizing: border-box;
+  flex: 1;
+}
+
+@import "pages/first-page";
+@import "pages/second-page";
+@import "pages/third-page";
